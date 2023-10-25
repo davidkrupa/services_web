@@ -1,13 +1,16 @@
 import Hero from "@/containers/Hero";
-import About from "@/containers/About";
+import OurWork from "@/containers/OurWork";
 import Faq from "@/containers/Faq";
-import Navbar from "@/containers/Navbar";
+import AboutMe from "@/containers/AboutMe";
+import PersonalValues from "@/containers/PersonalValues";
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-center items-center mx-auto max-w-5xl bg-slate-200">
+    <main className="flex flex-col justify-center items-center mx-auto max-w-5xl">
       <Hero />
-      <About />
+      <AboutMe />
+      <OurWork />
+      <PersonalValues />
       <Faq />
     </main>
   );
