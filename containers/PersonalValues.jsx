@@ -18,7 +18,7 @@ const PersonalValues = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 w-2/3 sm:w-full gap-4">
         {values.map((el, i) => (
           <div className="flex justify-center items-center gap-4">
-            <AiFillCheckCircle className="shrink-0 text-2xl text-green-600" />
+            <AiFillCheckCircle className="shrink-0 text-2xl text-orange-500" />
             <p className="text-xl text-gray-700 font-semibold">{el.item}</p>
           </div>
         ))}
