@@ -8,7 +8,9 @@ const AboutMe = () => {
       <h2 className="text-3xl text-gray-800 font-semibold">About Me</h2>
       <div className="flex flex-col-reverse sm:flex-row justify-between items-center w-full gap-6 px-2 sm:px-6">
         <div className="w-5/6 sm:w-1/2">
-          <h3 className="text-3xl text-gray-800 font-semibold py-3">My Name</h3>
+          <h3 className="text-3xl text-gray-800 font-semibold mb-2 py-1 pl-2 border-l-4 border-orange-400">
+            My Name
+          </h3>
           <p>
             Few words describing who am I, what I am doing and why I am
             passionate about it

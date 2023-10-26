@@ -4,19 +4,19 @@ const Navbar = () => {
   const navLinks = [
     {
       name: "Home",
-      path: "",
+      path: "/",
     },
     {
       name: "About",
-      path: "",
+      path: "/",
     },
     {
       name: "Services",
-      path: "",
+      path: "/",
     },
     {
       name: "Contact",
-      path: "",
+      path: "#contact",
     },
   ];
   return (
@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="flex justify-center items-center gap-6">
         {navLinks.map((item, i) => (
           <a
-            href="#"
+            href={item.path}
             key={`navLink-${i}`}
             className="font-medium border-b-2 border-transparent hover:border-black transition ease-in-out delay-100"
           >

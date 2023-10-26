@@ -3,6 +3,7 @@ import OurWork from "@/containers/OurWork";
 import Faq from "@/containers/Faq";
 import AboutMe from "@/containers/AboutMe";
 import PersonalValues from "@/containers/PersonalValues";
+import Contact from "@/containers/Contact";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <OurWork />
       <PersonalValues />
       <Faq />
+      <Contact />
     </main>
   );
 }
