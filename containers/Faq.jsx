@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { FaChevronDown, FaChevronRight } from "react-icons/fa";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const Faq = () => {
   const [questions, setQuestions] = useState([
@@ -53,10 +53,10 @@ const Faq = () => {
             <motion.div
               onClick={() => handleClick(index)}
               whileHover={{ scale: 1.01, transition: { duration: 0.3 } }}
-              className="flex justify-between items-center relative z-10 p-3 rounded-xl shadow-md bg-slate-400"
+              className="flex justify-between items-center relative z-10 p-3 rounded-xl shadow-md bg-slate-200"
             >
               <h5 className="text-base font-semibold">{item.question}</h5>
-              {item.isOpen ? <FaChevronDown /> : <FaChevronRight />}
+              {item.isOpen ? <FaChevronUp /> : <FaChevronDown />}
             </motion.div>
             <AnimatePresence>
               {item.isOpen && (

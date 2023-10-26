@@ -1,7 +1,8 @@
 import IconWithText from "@/components/IconWithText";
-import Multicolumn from "@/components/Multicolumn";
 import React from "react";
 import { AiFillHome } from "react-icons/ai";
+import heroImage from "../assets/heroImage.jpg";
+import Image from "next/image";
 
 const About = () => {
   const testArray = [1, 2, 3];
@@ -11,7 +12,7 @@ const About = () => {
     text: "some text about content of this container shortly describing some facts about the company",
   };
   return (
-    <div className="flex flex-col justify-center items-center gap-10 px-2 sm:px-6 py-14">
+    <div className="flex flex-col justify-center items-center gap-10 px-2 sm:px-6 py-14 ">
       <h2 className="text-3xl text-gray-800 font-semibold">
         What are we doing
       </h2>

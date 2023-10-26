@@ -1,5 +1,5 @@
 import React from "react";
-import { BsTelephone, BsMessenger } from "react-icons/bs";
+import { BsTelephone, BsFacebook } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 
 const Contact = () => {
@@ -9,7 +9,9 @@ const Contact = () => {
       className="flex flex-col justify-center items-center w-full px-2 sm:px-6 py-14 gap-10 bg-slate-100"
     >
       <h2 className="text-3xl text-gray-800 font-semibold">Contact</h2>
-      <div className="flex flex-col sm:flex-row gap-8 sm:gap-16">
+      <div className="flex flex-col sm:flex-row justify-around items-start w-full gap-8 sm:gap-16">
+        <div>Mapa google miniatura</div>
+        <div>Quick links</div>
         <div className="flex flex-col justify-center items-start gap-2">
           <a className="px-6 py-2 w-full rounded-xl text-slate-50  font-medium shadow-lg hover:shadow-xl bg-orange-500 hover:bg-orange-600 transition ease-in-out delay-50 cursor-pointer">
             <div className="flex justify-start items-center gap-4">
@@ -25,8 +27,8 @@ const Contact = () => {
           </a>
           <a className="px-6 py-2 w-full rounded-xl text-slate-50  font-medium shadow-lg hover:shadow-xl bg-orange-500 hover:bg-orange-600 transition ease-in-out delay-50 cursor-pointer">
             <div className="flex justify-start items-center gap-4">
-              <BsMessenger className="shrink-0 text-xl text-slate-50" />
-              Messenger
+              <BsFacebook className="shrink-0 text-xl text-slate-50" />
+              Facebook
             </div>
           </a>
         </div>

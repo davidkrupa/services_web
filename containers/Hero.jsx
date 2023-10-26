@@ -16,19 +16,29 @@ const Hero = () => {
           className="rounded-md shadow-xl mx-auto"
         />
       </div>
-      <div className="flex flex-col justify-center items-center w-full sm:w-1/2 py-6 gap-6">
-        <h1 className="text-center text-6xl text-gray-800 font-semibold leading-tight">
-          Fotowoltaika Elektryka
-        </h1>
-        <h2 className="text-center text-3xl text-gray-700 font-semibold">
-          Pełny montaż i serwis
-        </h2>
-        <a className="px-8 py-3 mt-3 rounded-xl text-slate-50  font-medium shadow-lg hover:shadow-xl bg-orange-500 hover:bg-orange-600 transition ease-in-out delay-50 cursor-pointer">
-          <div className="flex justify-start items-center gap-4">
-            <BsTelephone className="shrink-0 text-xl text-slate-50" />
-            Zadzwoń
-          </div>
-        </a>
+      <div className="flex flex-col justify-center items-start w-5/6 sm:w-1/2 md:pl-8 py-6 gap-6 lg:gap-10">
+        <h4 className="text-lg font-medium uppercase tracking-widest">
+          10+ years of experience
+        </h4>
+        <div className="flex flex-col gap-2 lg:gap-4">
+          <h1 className="text-5xl leading-tight lg:text-6xl lg:leading-tight text-gray-800 font-semibold">
+            Fotowoltaika Elektryka
+          </h1>
+          <h2 className="text-2xl lg:text-3xl text-gray-700 font-semibold">
+            Pełny montaż i serwis
+          </h2>
+        </div>
+        <div className="flex justify-start items-center flex-wrap mt-8 gap-5">
+          <a className="flex px-8 py-3 rounded-xl text-slate-50  font-medium shadow-lg hover:shadow-xl bg-orange-500 hover:bg-orange-600 transition ease-in-out delay-50 cursor-pointer">
+            <div className="flex justify-start items-center gap-4">
+              <BsTelephone className="shrink-0 text-xl text-slate-50" />
+              Zadzwoń
+            </div>
+          </a>
+          <span className="text-lg font-medium text-slate-900">
+            0-555-666-888
+          </span>
+        </div>
       </div>
     </div>
   );
