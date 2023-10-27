@@ -1,8 +1,6 @@
 import IconWithText from "@/components/IconWithText";
 import React from "react";
 import { AiFillHome } from "react-icons/ai";
-import heroImage from "../assets/heroImage.jpg";
-import Image from "next/image";
 
 const About = () => {
   const testArray = [1, 2, 3];

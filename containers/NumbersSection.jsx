@@ -44,7 +44,7 @@ const NumbersSection = () => {
           <span className="text-6xl md:text-7xl font-semibold text-orange-500">
             15+
           </span>
-          <p className="text-lg text-slate-900 font-medium">
+          <p className="text-lg text-slate-900 text-center font-medium">
             Years of Experience
           </p>
         </div>
@@ -52,19 +52,25 @@ const NumbersSection = () => {
           <span className="text-6xl md:text-7xl font-bold text-orange-500">
             50+
           </span>
-          <p className="text-lg text-slate-900 font-medium">Happy Customers</p>
+          <p className="text-lg text-slate-900 text-center font-medium">
+            Happy Customers
+          </p>
         </div>
         <div className="flex flex-col justify-center items-center">
           <span className="text-6xl md:text-7xl font-semibold text-orange-500">
             4.5
           </span>
-          <p className="text-lg text-slate-900 font-medium">Stars in Google</p>
+          <p className="text-lg text-slate-900 text-center font-medium">
+            Stars in Google
+          </p>
         </div>
         <div className="flex flex-col justify-center items-center">
           <span className="text-6xl md:text-7xl font-semibold text-orange-500">
             500+
           </span>
-          <p className="text-lg text-slate-900 font-medium">Panels Mounted</p>
+          <p className="text-lg text-slate-900 text-center font-medium">
+            Panels Mounted
+          </p>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ const IconWithText = ({ details: { icon, title, text } }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
-      className="flex flex-col justify-center items-center rounded-md text-center px-4 py-6 bg-slate-200 shadow-md"
+      className="flex flex-col justify-center items-center rounded-md text-center px-4 py-6 bg-slate-100 shadow-lg"
     >
       <Image
         src={heroImage}

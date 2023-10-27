@@ -10,7 +10,6 @@ const Contact = () => {
     >
       <h2 className="text-3xl text-gray-800 font-semibold">Contact</h2>
       <div className="flex flex-col sm:flex-row justify-around items-start w-full gap-8 sm:gap-16">
-        <div>Mapa google miniatura</div>
         <div>Quick links</div>
         <div className="flex flex-col justify-center items-start gap-2">
           <a className="px-6 py-2 w-full rounded-xl text-slate-50  font-medium shadow-lg hover:shadow-xl bg-orange-500 hover:bg-orange-600 transition ease-in-out delay-50 cursor-pointer">
