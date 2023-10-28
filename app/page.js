@@ -8,12 +8,13 @@ import NumbersSection from "@/containers/NumbersSection";
 import Quote from "@/containers/Quote";
 import BackgroundWithText from "@/containers/BackgroundWithText";
 import ImageGallery from "@/containers/ImageGallery";
+import SocialMediaSticky from "@/containers/ChatContacts";
 
 export default function Home() {
   return (
     <main className="flex flex-col justify-center items-center mx-auto max-w-5xl">
       <Hero />
-      <BackgroundWithText />
+      {/* <BackgroundWithText />  */}
       <PersonalValues />
       <AboutMe />
       <NumbersSection /> {/* to remove */}

@@ -5,7 +5,10 @@ import { BsTelephone } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col sm:flex-row justify-start items-center w-full px-2 sm:px-6 py-12 gap-10">
+    <div
+      id="hero"
+      className="flex flex-col sm:flex-row justify-start items-center w-full px-2 sm:px-6 py-12 gap-10"
+    >
       <div className="w-full sm:w-1/2">
         <Image
           src={exampleImg1}

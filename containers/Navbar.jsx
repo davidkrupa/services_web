@@ -5,20 +5,20 @@ import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
   const navLinks = [
     {
       name: "Home",
-      path: "/",
+      path: "#hero",
     },
     {
       name: "About",
-      path: "/",
+      path: "#about",
     },
     {
-      name: "Services",
-      path: "/",
+      name: "FAQ",
+      path: "#faq",
     },
     {
       name: "Contact",
@@ -68,7 +68,7 @@ const Navbar = () => {
                 {navLinks.map((item) => (
                   <li key={item.name}>
                     <a
-                      href={`#${item.path}`}
+                      href={item.path}
                       onClick={() => setToggle(false)}
                       className="text-xl text-slate-900 font-medium border-b-2 border-transparent hover:border-orange-500 transition ease-in-out delay-100"
                     >

@@ -42,7 +42,10 @@ const Faq = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center w-full gap-10 py-14">
+    <div
+      id="faq"
+      className="flex flex-col justify-center items-center w-full gap-10 py-14"
+    >
       <h2 className="text-3xl font-semibold text-center px-2">
         Frequently Asked Questions
       </h2>
