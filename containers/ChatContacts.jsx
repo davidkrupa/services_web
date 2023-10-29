@@ -4,14 +4,15 @@ import React, { useState } from "react";
 import { AiOutlineMail, AiOutlinePhone, AiFillFacebook } from "react-icons/ai";
 import { motion, AnimatePresence } from "framer-motion";
 
-const SocialMediaSticky = () => {
+const ChatContacts = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="flex justify-start items-center fixed lg:sticky z-20 bottom-8 ml-2 w-full h-0">
+    <div className="flex justify-start items-center fixed lg:sticky z-40 bottom-8 ml-2 w-full h-10">
       <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.9 }}
-        className="flex justify-center items-center fixed lg:relative z-20"
+        className="flex justify-center items-center relative z-30 h-20"
+        // className="flex justify-center items-center fixed lg:relative z-20"
         onClick={() => setIsOpen((prev) => !prev)}
       >
         <motion.div
@@ -68,4 +69,4 @@ const SocialMediaSticky = () => {
   );
 };
 
-export default SocialMediaSticky;
+export default ChatContacts;

@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/containers/Navbar";
 import Footer from "@/containers/Footer";
-import SocialMediaSticky from "@/containers/ChatContacts";
+import ChatContacts from "@/containers/ChatContacts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,11 +13,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="text-slate-900 antialiased scroll-smooth">
+    <html lang="en" className="text-slate-900 antialiased">
       <body className={inter.className}>
         <Navbar />
         {children}
-        <SocialMediaSticky />
+        {/* <ChatContacts /> */}
+
         <Footer />
       </body>
     </html>
