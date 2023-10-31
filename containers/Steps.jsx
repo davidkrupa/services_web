@@ -39,6 +39,31 @@ const Steps = () => {
           </div>
         ))}
       </div>
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
+        <a
+          href="#"
+          target="_blank"
+          className="group px-6 py-2 w-full rounded-xl text-slate-50 font-medium shadow-lg border-2 border-transparent hover:border-orange-600 hover:shadow-xl bg-orange-500 hover:bg-white transition ease-in-out delay-50 cursor-pointer"
+        >
+          <div className="flex justify-start items-center gap-4">
+            <BsFacebook className="shrink-0 text-xl text-slate-50 group-hover:text-orange-600 transition ease-in-out delay-50 cursor-pointer" />
+            <span className="whitespace-nowrap group-hover:text-orange-600 transition ease-in-out delay-50 cursor-pointer">
+              Facebook
+            </span>
+          </div>
+        </a>
+        <a
+          href="#"
+          className="group px-6 py-2 w-full rounded-xl text-slate-50 font-medium shadow-lg border-2 border-transparent hover:border-orange-600 hover:shadow-xl bg-orange-500 hover:bg-white transition ease-in-out delay-50 cursor-pointer"
+        >
+          <div className="flex justify-start items-center gap-4">
+            <BsTelephone className="shrink-0 text-xl text-slate-50 group-hover:text-orange-600 transition ease-in-out delay-50 cursor-pointer" />
+            <span className="whitespace-nowrap group-hover:text-orange-600 transition ease-in-out delay-50 cursor-pointer">
+              000-000-000
+            </span>
+          </div>
+        </a>
+      </div>
     </div>
   );
 };
