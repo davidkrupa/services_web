@@ -1,13 +1,13 @@
 import React from "react";
 import exampleImg1 from "assets/exampleImg1.jpg";
 import Image from "next/image";
-import { BsTelephone } from "react-icons/bs";
+import { BsFacebook, BsTelephone } from "react-icons/bs";
 
 const Hero = () => {
   return (
     <div
       id="hero"
-      className="flex flex-col sm:flex-row justify-start items-center w-full px-2 sm:px-6 py-12 gap-10"
+      className="flex flex-col sm:flex-row justify-start items-center w-full sm:px-6 pb-6 sm:py-12 gap-10"
     >
       <div className="w-full sm:w-1/2">
         <Image
@@ -19,28 +19,42 @@ const Hero = () => {
           className="rounded-md shadow-xl mx-auto"
         />
       </div>
-      <div className="flex flex-col justify-center items-start w-5/6 sm:w-1/2 md:pl-8 py-6 gap-6 lg:gap-10">
+      <div className="flex flex-col justify-center items-start w-5/6 sm:w-1/2 md:pl-8 px-2 py-6 gap-6 lg:gap-10">
         <h4 className="sm:text-lg font-medium uppercase tracking-widest">
-          10+ years of experience
+          10+ Lat Doświadczenia
         </h4>
-        <div className="flex flex-col gap-2 lg:gap-4">
-          <h1 className="text-4xl leading-tight sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight text-gray-800 font-semibold">
+        <div className="flex flex-col gap-4 md:gap-8">
+          <h1 className="text-5xl leading-tight lg:text-6xl lg:leading-tight text-gray-800 font-semibold">
             Fotowoltaika Elektryka
           </h1>
-          <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-700 font-semibold">
+          <h2 className="text-2xl lg:text-3xl text-gray-800 font-semibold">
             Pełny montaż i serwis
           </h2>
         </div>
         <div className="flex justify-start items-center flex-wrap mt-8 gap-5">
-          <a className="flex px-8 py-3 rounded-xl text-slate-50  font-medium shadow-lg hover:shadow-xl bg-orange-500 hover:bg-orange-600 transition ease-in-out delay-50 cursor-pointer">
+          <a
+            href=""
+            target="_blank"
+            className="group px-6 py-2 rounded-xl text-primary-50 font-medium shadow-lg border-2 border-transparent hover:border-secondary-600 hover:shadow-xl bg-secondary-500 hover:bg-white transition ease-in-out delay-50 cursor-pointer"
+          >
             <div className="flex justify-start items-center gap-4">
-              <BsTelephone className="shrink-0 text-xl text-slate-50" />
-              Zadzwoń
+              <BsFacebook className="shrink-0 text-xl text-primary-50 group-hover:text-secondary-600 transition ease-in-out delay-50 cursor-pointer" />
+              <span className="whitespace-nowrap group-hover:text-secondary-600 transition ease-in-out delay-50 cursor-pointer">
+                Facebook
+              </span>
             </div>
           </a>
-          <span className="text-lg font-medium text-slate-900">
-            0-555-666-888
-          </span>
+          <a
+            href=""
+            className="group px-6 py-2 rounded-xl text-primary-50 font-medium shadow-lg border-2 border-transparent hover:border-secondary-600 hover:shadow-xl bg-secondary-500 hover:bg-white transition ease-in-out delay-50 cursor-pointer"
+          >
+            <div className="flex justify-start items-center gap-4">
+              <BsTelephone className="shrink-0 text-xl text-primary-50 group-hover:text-secondary-600 transition ease-in-out delay-50 cursor-pointer" />
+              <span className="whitespace-nowrap group-hover:text-secondary-600 transition ease-in-out delay-50 cursor-pointer">
+                00 000 000 000
+              </span>
+            </div>
+          </a>
         </div>
       </div>
     </div>
