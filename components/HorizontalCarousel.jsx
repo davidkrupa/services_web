@@ -10,16 +10,19 @@ import testImage from "../assets/croppedImage.jpg";
 const testArray = [
   {
     title: "One",
+    text: "short description",
     image: testImage,
     alt: "lake in the mountains",
   },
   {
     title: "Two",
+    text: "short description",
     image: testImage,
     alt: "lake in the mountains",
   },
   {
     title: "Three",
+    text: "short description",
     image: testImage,
     alt: "lake in the mountains",
   },
@@ -70,14 +73,6 @@ const HorizontalCarousel = ({ data }) => {
       swipeable
       responsive={responsive}
     >
-      {/* {test?.map((item, i) => (
-        <div
-          className="flex flex-col justify-center items-center w-full border-2 border-red-600 bg-primary-500"
-          key={`card-${i}`}
-        >
-          <h3 className="text-gray-800 text-3xl font-bold">{item}</h3>
-        </div>
-      ))} */}
       {testArray.map((item, i) => (
         <div className="w-full p-8" key={`card-${i}`}>
           <IconWithText details={item} key={i} />

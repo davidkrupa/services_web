@@ -13,7 +13,7 @@ const IconWithText = ({ details: { title, text, image, alt, id }, path }) => {
       className="flex flex-col justify-start items-center rounded-md h-full text-center bg-primary-50 shadow-lg"
     >
       <Image
-        src={image}
+        src={heroImage}
         width={400}
         height={400}
         alt={alt}

@@ -10,7 +10,7 @@ import BackgroundWithText from "@/containers/BackgroundWithText";
 import ImageGallery from "@/containers/ImageGallery";
 import ChatContacts from "@/containers/ChatContacts";
 import Steps from "@/containers/Steps";
-import HorizontalCarousel from "@/containers/HorizontalCarousel";
+import Propositions from "@/containers/Propositions";
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
       <Quote /> {/* to remove */}
       {/* <ImageGallery /> */}
       <Faq />
-      <HorizontalCarousel />
+      <Propositions />
       <Contact />
     </main>
   );
