@@ -24,7 +24,10 @@ const Hero = () => {
           10+ Lat Doświadczenia
         </h4>
         <div className="flex flex-col gap-4 md:gap-8">
-          <h1 className="text-5xl leading-tight lg:text-6xl lg:leading-tight text-gray-800 font-semibold">
+          <h1
+            data-test="hero-title"
+            className="text-5xl leading-tight lg:text-6xl lg:leading-tight text-gray-800 font-semibold"
+          >
             Fotowoltaika Elektryka
           </h1>
           <h2 className="text-2xl lg:text-3xl text-gray-800 font-semibold">
