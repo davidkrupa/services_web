@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <div
+    <section
       id="about"
       className="flex flex-col justify-center items-center px-2 sm:px-6 py-14 gap-10"
     >
@@ -31,7 +31,7 @@ const AboutMe = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

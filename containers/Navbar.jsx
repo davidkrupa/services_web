@@ -27,7 +27,10 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-between items-center mx-auto max-w-5xl py-4 px-6 bg-slate-800">
+    <nav
+      className="flex justify-between items-center mx-auto max-w-5xl py-4 px-6 bg-slate-800"
+      data-test="navbar"
+    >
       <div className="text-slate-50">Logo</div>
 
       <div className="hidden sm:flex sm:justify-center sm:items-center sm:gap-6">

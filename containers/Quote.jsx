@@ -5,7 +5,7 @@ import { BiSolidQuoteAltRight, BiSolidQuoteAltLeft } from "react-icons/bi";
 
 const Quote = () => {
   return (
-    <div className="flex flex-col sm:flex-row justify-center items-center px-2 sm:px-6 py-14 gap-8 sm:gap-0 bg-slate-100">
+    <section className="flex flex-col sm:flex-row justify-center items-center px-2 sm:px-6 py-14 gap-8 sm:gap-0 bg-slate-100">
       <div className="w-full sm:w-1/3">
         <Image
           src={croppedImage}
@@ -25,7 +25,7 @@ const Quote = () => {
         </p>
         <BiSolidQuoteAltRight className="self-end text-4xl lg:text-6xl text-orange-500 font-bold" />
       </div>
-    </div>
+    </section>
   );
 };
 

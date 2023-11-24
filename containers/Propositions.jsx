@@ -3,9 +3,9 @@ import HorizontalCarousel from "@/components/HorizontalCarousel";
 
 const Propositions = () => {
   return (
-    <div className="w-full h-full">
+    <section className="w-full h-full">
       <HorizontalCarousel />
-    </div>
+    </section>
   );
 };
 

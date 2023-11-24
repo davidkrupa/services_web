@@ -18,7 +18,7 @@ const PersonalValues = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center w-full px-2 sm:px-6 gap-10 py-14 bg-slate-100">
+    <section className="flex flex-col justify-center items-center w-full px-2 sm:px-6 gap-10 py-14 bg-slate-100">
       <h2 className="text-3xl text-gray-800 font-semibold">Why Me</h2>
       <div className="flex flex-col sm:flex-row justify-around items-start flex-shrink-0 sm:w-full gap-4 sm:gap-8">
         <div className="flex flex-col justify-center items-start flex-shrink-0 sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] gap-4">
@@ -45,7 +45,7 @@ const PersonalValues = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

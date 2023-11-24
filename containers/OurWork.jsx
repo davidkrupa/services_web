@@ -10,7 +10,7 @@ const About = () => {
     text: "some text about content of this container shortly describing some facts about the company",
   };
   return (
-    <div className="flex flex-col justify-center items-center gap-10 px-2 sm:px-6 py-14 ">
+    <section className="flex flex-col justify-center items-center gap-10 px-2 sm:px-6 py-14 ">
       <h2 className="text-3xl text-gray-800 font-semibold">
         What are we doing
       </h2>
@@ -19,7 +19,7 @@ const About = () => {
           <IconWithText details={details} key={i} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

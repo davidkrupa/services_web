@@ -25,7 +25,7 @@ const NumbersSection = () => {
   ];
 
   return (
-    <div className="flex flex-col sm:flex-row justify-center items-center w-full px-2 sm:px-6 py-14 gap-10 bg-slate-100">
+    <section className="flex flex-col sm:flex-row justify-center items-center w-full px-2 sm:px-6 py-14 gap-10 bg-slate-100">
       <div className="flex flex-col justify-center items-start w-5/6 sm:w-1/2 md:ml-6">
         <h3 className="text-3xl font-semibold mb-8 text-slate-900">
           Lets numbers talk
@@ -73,7 +73,7 @@ const NumbersSection = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

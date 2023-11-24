@@ -5,7 +5,7 @@ import { BsFacebook, BsTelephone } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div
+    <section
       id="hero"
       className="flex flex-col sm:flex-row justify-start items-center w-full sm:px-6 pb-6 sm:py-12 gap-10"
     >
@@ -60,7 +60,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

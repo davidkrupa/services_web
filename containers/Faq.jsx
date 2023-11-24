@@ -42,7 +42,7 @@ const Faq = () => {
   };
 
   return (
-    <div
+    <section
       id="faq"
       className="flex flex-col justify-center items-center w-full gap-10 py-14"
     >
@@ -79,7 +79,7 @@ const Faq = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

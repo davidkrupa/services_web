@@ -21,7 +21,7 @@ const Steps = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center gap-14 py-14 px-2 sm:px-6">
+    <section className="flex flex-col justify-center items-center gap-14 py-14 px-2 sm:px-6">
       <h2 className="text-3xl text-gray-800 font-semibold">Plan Działania</h2>
       <div className="flex flex-col md:flex-row justify-center items-start gap-10 max-w-[400px] md:max-w-none">
         {stepsData.map((step, i) => (
@@ -64,7 +64,7 @@ const Steps = () => {
           </div>
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 
