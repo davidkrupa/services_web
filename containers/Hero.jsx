@@ -34,29 +34,32 @@ const Hero = () => {
             Pełny montaż i serwis
           </h2>
         </div>
-        <div className="flex justify-start items-center flex-wrap mt-8 gap-5">
+        <div
+          data-test="hero-buttons-container"
+          className="flex justify-start items-center flex-wrap mt-8 gap-5"
+        >
           <a
             href=""
             target="_blank"
             className="group px-6 py-2 rounded-xl text-primary-50 font-medium shadow-lg border-2 border-transparent hover:border-secondary-600 hover:shadow-xl bg-secondary-500 hover:bg-white transition ease-in-out delay-50 cursor-pointer"
           >
-            <div className="flex justify-start items-center gap-4">
+            <button className="flex justify-start items-center gap-4">
               <BsFacebook className="shrink-0 text-xl text-primary-50 group-hover:text-secondary-600 transition ease-in-out delay-50 cursor-pointer" />
               <span className="whitespace-nowrap group-hover:text-secondary-600 transition ease-in-out delay-50 cursor-pointer">
                 Facebook
               </span>
-            </div>
+            </button>
           </a>
           <a
             href=""
             className="group px-6 py-2 rounded-xl text-primary-50 font-medium shadow-lg border-2 border-transparent hover:border-secondary-600 hover:shadow-xl bg-secondary-500 hover:bg-white transition ease-in-out delay-50 cursor-pointer"
           >
-            <div className="flex justify-start items-center gap-4">
+            <button className="flex justify-start items-center gap-4">
               <BsTelephone className="shrink-0 text-xl text-primary-50 group-hover:text-secondary-600 transition ease-in-out delay-50 cursor-pointer" />
               <span className="whitespace-nowrap group-hover:text-secondary-600 transition ease-in-out delay-50 cursor-pointer">
                 00 000 000 000
               </span>
-            </div>
+            </button>
           </a>
         </div>
       </div>

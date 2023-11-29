@@ -15,7 +15,27 @@ describe("Basic spec", () => {
     });
   });
 
+  it("Should display sections", () => {
+    // check if sections exist
+    cy.get("section").should("have.length.greaterThan", 0);
+  });
+
   it("Contains hero title", () => {
+    cy.get("section#hero h1").should("exist");
+
     cy.get('[data-test="hero-title"]').contains("Fotowoltaika Elektryka");
+  });
+
+  it("Hero contains image", () => {
+    cy.get("section#hero img").should("exist");
+  });
+
+  it("Buttons should exist", () => {
+    cy.get('[data-test="hero-buttons-container"]')
+      .should("have.length.greaterThan", 0)
+      // check if each <a> contains <button>
+      .each(($link) => {
+        cy.wrap($link).find("button").should("exist");
+      });
   });
 });
