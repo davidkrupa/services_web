@@ -9,8 +9,16 @@ const ValuesColumn = ({ values }) => {
           key={`values1-${i}`}
           className="flex justify-start items-start gap-4"
         >
-          <AiFillCheckCircle className="shrink-0 text-2xl text-orange-500" />
-          <p className="text-xl text-gray-700 font-semibold">{el.item}</p>
+          <AiFillCheckCircle
+            data-test="value-icon"
+            className="shrink-0 text-2xl text-orange-500"
+          />
+          <p
+            data-test="value-text"
+            className="text-xl text-gray-700 font-semibold"
+          >
+            {el.item}
+          </p>
         </div>
       ))}
     </div>

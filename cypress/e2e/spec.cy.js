@@ -38,4 +38,22 @@ describe("Basic spec", () => {
         cy.wrap($link).find("button").should("exist");
       });
   });
+
+  it("Should display and have at leat 4 values", () => {
+    cy.get("h2").contains("Why Me", { matchCase: false });
+
+    cy.get('[data-test="value-icon"]').should("exist");
+
+    cy.get('[data-test="value-text"]').should("have.length.greaterThan", 3);
+  });
+
+  it("Should have same amount of icons as text fields", () => {
+    cy.get('[data-test="value-icon"]')
+      .its("length")
+      .then((iconAmount) => {
+        cy.get('[data-test="value-text"]')
+          .its("length")
+          .should("eq", iconAmount);
+      });
+  });
 });
