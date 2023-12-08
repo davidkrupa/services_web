@@ -56,4 +56,16 @@ describe("Basic spec", () => {
           .should("eq", iconAmount);
       });
   });
+
+  it("About Me section displayed properly", () => {
+    cy.get('[data-test="about-me-title"]').contains("About Me", {
+      matchCase: false,
+    });
+
+    cy.get('[data-test="about-me-name"]').should("exist");
+
+    cy.get('[data-test="about-me-description"]').should("exist");
+
+    cy.get('[data-test="about-me-image"] img').should("exist");
+  });
 });
