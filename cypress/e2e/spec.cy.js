@@ -68,4 +68,16 @@ describe("Basic spec", () => {
 
     cy.get('[data-test="about-me-image"] img').should("exist");
   });
+
+  it("Numbers section displayed properly", () => {
+    cy.get('[data-test="numbers-title"]').contains("Lets numbers talk", {
+      matchCase: false,
+    });
+
+    cy.get('[data-test="numbers-description"]').should("exist");
+
+    cy.get('[data-test="numbers-focused-number"]').should("exist");
+
+    cy.get('[data-test="numbers-focused-text"]').should("exist");
+  });
 });
